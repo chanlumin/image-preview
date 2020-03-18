@@ -1,0 +1,28 @@
+.image__preview--btn {
+  color: #fff;
+  background-color: #00796a;
+  border-color: #00796a;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.image__preview--btn:disabled {
+  opacity: 0.65;
+}
+.image__preview--btn:active {
+  outline: none;
+}

@@ -1,23 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ImagePreview from './components/image-preview'
+import img1 from './assets/images/0001.jpg'
+import img2 from './assets/images/0002.jpg'
+import img3 from './assets/images/0003.jpg'
+import img4 from './assets/images/0004.jpg'
+import img5 from './assets/images/0005.jpg'
+
+const imageList = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5
+]
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ImagePreview
+          imageList={imageList}
+        />
       </header>
     </div>
   );
